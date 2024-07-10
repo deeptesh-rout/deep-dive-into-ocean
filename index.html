@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll to the Abyss</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+		<div class="container-fluid">
+			<ul class="navbar-nav me-auto mb-2 mb-md-0">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#sunlight">Sunlight</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#twilight">Twilight</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#midnight">Midnight</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#abyss">Abyss</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#trench">Trench</a>
+				</li>
+				<li class="nav-item elements">
+					<div class="nav-link active">Items discovered : <span id="elementsNumber">0</span>/27</div>
+				</li>
+				<li class="showAll nav-item">
+					<div id="showAll" class="btn btn-primary nav-link active">Show All</div>
+				</li>
+				<li class="hideAll nav-item">
+					<div id="hideAll" class="btn btn-primary nav-link active">Hide All</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="sky">
+		<div class="main-title row d-flex justify-content-center align-items-center">
+			<div class="col-12">
+				<div class="d-flex justify-content-center">
+					<h1>Scroll to the Abyss</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="d-flex justify-content-center">
+					<span>Uncover Hidden Treasures and Marine Wonders</span>
+				</div>
+			</div>
+			<div class="col-12 mt-5">
+				<div class="d-flex justify-content-center">
+					<div class="mouse-scroll">
+						<div class="mouse">
+							<div class="wheel"></div>
+						</div>
+						<div class="arrow"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container deep">
+		<div class="row">
+			<div class="col">
+				<div class="d-flex justify-content-center">
+					<div class="container">
+						<img id="image" src="https://drive.google.com/thumbnail?id=1w7Jx-qQ1lvv5IGht1FNd7Zbudo6tnlKB&sz=w1000">
+						<div class="deep"></div>
+						<div class="titles sunlight" id="sunlight">
+							<div class="title">
+								<h1 class="no-span">Sunlight Zone</h1>
+								<span>0-200m</span>
+							</div>
+						</div>
+						<div class="titles twilight" id="twilight">
+							<div class="title">
+								<h1 class="no-span">Twilight Zone</h1>
+								<span>200-1000m</span>
+							</div>
+						</div>
+						<div class="titles midnight" id="midnight">
+							<div class="title">
+								<h1 class="no-span">Midnight Zone</h1>
+								<span>1000-4000m</span>
+							</div>
+						</div>
+						<div class="titles abyss" id="abyss">
+							<div class="title">
+								<h1 class="no-span">The Abyss</h1>
+								<span>4000-6000m</span>
+							</div>
+						</div>
+						<div class="titles trench" id="trench">
+							<div class="title">
+								<h1 class="no-span">The Trench</h1>
+								<span>6000-11000m</span>
+							</div>
+						</div>
+						<div class="species coelacanth">
+							<img src="https://drive.google.com/thumbnail?id=1G5YadSz_wl_CDe-1kUHqU_q5BF53DKPe&sz=w1000">
+							<div class="description">
+								<h2>Coelacanth</h2>
+								<p>200m</p>
+							</div>
+						</div>
+						<div class="species japanese-spider-crab">
+							<img src="https://drive.google.com/thumbnail?id=1F7RFIoCdd4Q5tsGnYbXZaeOG2tbo2uG6&sz=w1000">
+							<div class="description">
+								<h2>Japanese Spider Crab</h2>
+								<p>610m</p>
+							</div>
+						</div>
+						<div class="species cuttlefish">
+							<img src="https://drive.google.com/thumbnail?id=1qqBHqYdVvmWdhmnpWSjeszmUoEGvFB3U&sz=w1000">
+							<div class="description">
+								<h2>Cuttlefish</h2>
+								<p>600m</p>
+							</div>
+						</div>
+						<div class="species sea-angel">
+							<img src="https://drive.google.com/thumbnail?id=1CeU-0N9PBCCK9AhvkArvrOEesvkItvPL&sz=w1000">
+							<div class="description">
+								<h2>Sea Angel</h2>
+								<p>600m</p>
+							</div>
+						</div>
+						<div class="species nautilus">
+							<img src="https://drive.google.com/thumbnail?id=13fkdRcgc0sWUsoJquKRxHazEOnxEjQVo&sz=w1000">
+							<div class="description">
+								<h2>Nautilus</h2>
+								<p>700m</p>
+							</div>
+						</div>
+						<div class="species cockatoo-squid">
+							<img src="https://drive.google.com/thumbnail?id=12vUDJnST5M03vCnexc3rCPOC9OXJG40k&sz=w1000">
+							<div class="description">
+								<h2>Cockatoo Squid</h2>
+								<p>1300m</p>
+							</div>
+						</div>
+						<div class="species headless-chicken-fish">
+							<img src="https://drive.google.com/thumbnail?id=1vzbE80rnGLG74sZ2osby8GYZbwbFu9fa&sz=w1000">
+							<div class="description">
+								<h2>Headless Chicken Fish</h2>
+								<p>1000m</p>
+							</div>
+						</div>
+						<div class="species vampire-squid">
+							<img src="https://drive.google.com/thumbnail?id=18GWkOeom4Nq5xPswldWrfWmh9AyXCVLY&sz=w1000">
+							<div class="description">
+								<h2>Vampire Squid</h2>
+								<p>1200m</p>
+							</div>
+						</div>
+						<div class="species goblin-shark">
+							<img src="https://drive.google.com/thumbnail?id=10Sd73fDfGAJnlpzERRpGfdCHmkK5wA9C&sz=w1000">
+							<div class="description">
+								<h2>Goblin Shark</h2>
+								<p>1300m</p>
+							</div>
+						</div>
+						<div class="species firework-jellyfish">
+							<img src="https://drive.google.com/thumbnail?id=1yKKAAxr2pXG4GfFV7DmklOMfOtm6176L&sz=w1000">
+							<div class="description">
+								<h2>Firework Jellyfish</h2>
+								<p>1500m</p>
+							</div>
+						</div>
+						<div class="species dragonfish">
+							<img src="https://drive.google.com/thumbnail?id=1IV7cX9A3r1hnQivlw3--6MMZjKbcYHka&sz=w1000">
+							<div class="description">
+								<h2>Dragonfish</h2>
+								<p>1500m</p>
+							</div>
+						</div>
+						<div class="species barreleye-fish">
+							<img src="https://drive.google.com/thumbnail?id=1dkkAPYqq-CU5JrghehUnVRo4RT6uADet&sz=w1000">
+							<div class="description">
+								<h2>Barreleye Fish</h2>
+								<p>2500m</p>
+							</div>
+						</div>
+						<div class="species anglerfish">
+							<img src="https://drive.google.com/thumbnail?id=1u5zJdTHwjkE-rIJMCT8NqD40qgVDj0WU&sz=w1000">
+							<div class="description">
+								<h2>Anglerfish</h2>
+								<p>2500m</p>
+							</div>
+						</div>
+						<div class="species chimaera">
+							<img src="https://drive.google.com/thumbnail?id=1lf3PX4lhWFxjwvd_HJUKKizfqY3BcR4K&sz=w1000">
+							<div class="description">
+								<h2>Chimaera</h2>
+								<p>2600m</p>
+							</div>
+						</div>
+						<div class="species pelican-eel">
+							<img src="https://drive.google.com/thumbnail?id=1HAAga3FrhKYkRIplM2x06ZOYxOtRz37d&sz=w1000">
+							<div class="description">
+								<h2>Pelican Eel</h2>
+								<p>3000m</p>
+							</div>
+						</div>
+						<div class="species deepsea-lizardfish">
+							<img src="https://drive.google.com/thumbnail?id=1YbWxQGSJiv2qOPJxC3v0Gy0z1gDYXuaI&sz=w1000">
+							<div class="description">
+								<h2>Deepsea Lizardfish</h2>
+								<p>3500m</p>
+							</div>
+						</div>
+						<div class="species titanic">
+							<img src="https://drive.google.com/thumbnail?id=1IwppmFLfCXoLxF3HXJq3KQn9TIPLe4cP&sz=w1000">
+							<div class="description">
+								<h2>Titanic</h2>
+								<p>3800m</p>
+							</div>
+						</div>
+						<div class="species atolla-jellyfish">
+							<img src="https://drive.google.com/thumbnail?id=1EdVK4XEOr2Q99HuFMd2fUY88vDvLcuTX&sz=w1000">
+							<div class="description">
+								<h2>Atolla Jellyfish</h2>
+								<p>4000m</p>
+							</div>
+						</div>
+						<div class="species fangtooth">
+							<img src="https://drive.google.com/thumbnail?id=10qlp51i2dgMnfZ1u0_Ep7I0aIj7Wn32F&sz=w1000">
+							<div class="description">
+								<h2>Fangtooth</h2>
+								<p>5000m</p>
+							</div>
+						</div>
+						<div class="species faceless-fish">
+							<img src="https://drive.google.com/thumbnail?id=16BIpdj0C-TIUgcSIyDFyOazA74g9kY3t&sz=w1000">
+							<div class="description">
+								<h2>Faceless Fish</h2>
+								<p>5100m</p>
+							</div>
+						</div>
+						<div class="species grenadier">
+							<img src="https://drive.google.com/thumbnail?id=1A_Ex-WmSCJEJTSQOD-GJNTiXtJ9SnIGY&sz=w1000">
+							<div class="description">
+								<h2>Grenadier</h2>
+								<p>7000m</p>
+							</div>
+						</div>
+						<div class="species dumbo-octopus">
+							<img src="https://drive.google.com/thumbnail?id=1VI4Tx9veEiDqL-XrrtuHoevDTwiDj4v0&sz=w1000">
+							<div class="description">
+								<h2>Dumbo Octopus</h2>
+								<p>7000m</p>
+							</div>
+						</div>
+						<div class="species comb-jelly">
+							<img src="https://drive.google.com/thumbnail?id=1621lwws-oHXXjD6g9aB50hNOomyjkceI&sz=w1000">
+							<div class="description">
+								<h2>Comb Jelly</h2>
+								<p>7210m</p>
+							</div>
+						</div>
+						<div class="species hadal-snailfish">
+							<img src="https://drive.google.com/thumbnail?id=1EMoN5woTf0cBul3Gr1uQfNu6QOo_Gmjw&sz=w1000">
+							<div class="description">
+								<h2>Hadal Snailfish</h2>
+								<p>8100m</p>
+							</div>
+						</div>
+						<div class="species sea-pig">
+							<img src="https://drive.google.com/thumbnail?id=1nMBs6pWasPlfzH_69iyqZOcbjoB1lXtE&sz=w1000">
+							<div class="description">
+								<h2>Sea Pig</h2>
+								<p>10 000m</p>
+							</div>
+						</div>
+						<div class="species alicella">
+							<img src="https://drive.google.com/thumbnail?id=1lSahE2dMVzxEsSVIZiMn43lc22dNsmE-&sz=w1000">
+							<div class="description">
+								<h2>Alicella</h2>
+								<p>10 300m</p>
+							</div>
+						</div>
+						<div class="species deepsea">
+							<img src="https://drive.google.com/thumbnail?id=1qKyARbM8fb3XSqAtrC2AOzqU2pf5-lIR&sz=w1000">
+							<div class="description">
+								<h2>Deepsea Challenger</h2>
+								<p>10 898m</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="end">
+		<div class="main-title row d-flex justify-content-center align-items-center">
+			<div class="col-12">
+				<div class="d-flex justify-content-center">
+					<h1>Thanks</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="d-flex justify-content-center">
+					<span>Credits:</span>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="d-flex justify-content-center">
+					<span>Beach: <a href="https://freepik.com">Freepik</a> / Items: <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia</a></span>
+				</div>
+			</div>
+			<div class="col-12 mt-5">
+				<div class="d-flex justify-content-center">
+					<div class="mouse-scroll">
+						<div class="mouse">
+							<div class="wheel"></div>
+						</div>
+						<div class="arrow"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="measures">
+		<div id="distance">
+			Depth: 0m
+		</div>
+		<div id="pressure">Pressure: 101325 Pa</div>
+	</div>
+</body>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
